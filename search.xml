@@ -1,31 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-    
-    <entry>
-      <title>hexo 初体验</title>
-      <link href="/2018/05/12/hexo-%E5%88%9D%E4%BD%93%E9%AA%8C/"/>
-      <url>/2018/05/12/hexo-%E5%88%9D%E4%BD%93%E9%AA%8C/</url>
-      <content type="html"><![CDATA[<p>一.大概流程<br>创建仓库，smallew.github.io；<br>创建两个分支：master 与 hexo；<br>设置hexo为默认分支（因为我们只需要手动管理这个分支上的Hexo网站文件）；<br>使用git clone <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:smallew/smallew.github.io.git拷贝仓库；<br>在本地smallew.github.io文件夹下通过Git bash依次执行npm install hexo、hexo init、npm install 和 npm install hexo-deployer-git（此时当前分支应显示为hexo）;<br>修改_config.yml中的deploy参数，分支应为master；<br>依次执行git add .、git commit -m “…”、git push origin hexo提交网站相关的文件；<br>执行hexo generate -d生成网站并部署到GitHub上。</p><p>二.那些坑<br>1.对git不熟悉走了很多弯路，例如在master像提交到hexo分支一直不成功，用下面的命令<br>git checkout hexo #切换到hexo<br>2.</p><p>三.参考链接<br><a href="http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more" target="_blank" rel="noopener">http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more</a> （很详细说了怎么优化部署）<br><a href="https://blog.csdn.net/wuseyukui/article/details/68059953" target="_blank" rel="noopener">https://blog.csdn.net/wuseyukui/article/details/68059953</a> （说了一些坑）<br><a href="http://www.ruanyifeng.com/blog/2014/06/git_remote.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2014/06/git_remote.html</a> （git一些常规操作）<br><a href="https://www.zybuluo.com/mdeditor#" target="_blank" rel="noopener">https://www.zybuluo.com/mdeditor#</a> （markdown）</p>]]></content>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2018/05/09/hello-world/"/>
-      <url>/2018/05/09/hello-world/</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-      
-      
-    </entry>
-    
-  
-  
+<search>
+  <entry>
+    <title><![CDATA[hexo 初体验]]></title>
+    <url>%2F2018%2F05%2F12%2Fhexo-%E5%88%9D%E4%BD%93%E9%AA%8C%2F</url>
+    <content type="text"><![CDATA[一.大概流程创建仓库，smallew.github.io；创建两个分支：master 与 hexo；设置hexo为默认分支（因为我们只需要手动管理这个分支上的Hexo网站文件）；使用git clone git@github.com:smallew/smallew.github.io.git拷贝仓库；在本地smallew.github.io文件夹下通过Git bash依次执行npm install hexo、hexo init、npm install 和 npm install hexo-deployer-git（此时当前分支应显示为hexo）;修改_config.yml中的deploy参数，分支应为master；依次执行git add .、git commit -m “…”、git push origin hexo提交网站相关的文件；执行hexo generate -d生成网站并部署到GitHub上。 二.那些坑1.对git不熟悉走了很多弯路，例如在master像提交到hexo分支一直不成功，用下面的命令git checkout hexo #切换到hexo2. 三.参考链接http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more （很详细说了怎么优化部署）https://blog.csdn.net/wuseyukui/article/details/68059953 （说了一些坑）http://www.ruanyifeng.com/blog/2014/06/git_remote.html （git一些常规操作）https://www.zybuluo.com/mdeditor# （markdown）]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F05%2F09%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
 </search>
