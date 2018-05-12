@@ -463,13 +463,10 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>总结：<br><a href="https://blog.csdn.net/wuseyukui/article/details/68059953" target="_blank" rel="noopener">https://blog.csdn.net/wuseyukui/article/details/68059953</a></p>
-<p>千牛admin</p>
-<pre><code>system.out.println(&quot;hello world&quot;);
+        <p>一.大概流程<br>创建仓库，smallew.github.io；<br>创建两个分支：master 与 hexo；<br>设置hexo为默认分支（因为我们只需要手动管理这个分支上的Hexo网站文件）；<br>使用git clone <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:smallew/smallew.github.io.git拷贝仓库；<br>在本地smallew.github.io文件夹下通过Git bash依次执行npm install hexo、hexo init、npm install 和 npm install hexo-deployer-git（此时当前分支应显示为hexo）;<br>修改_config.yml中的deploy参数，分支应为master；<br>依次执行git add .、git commit -m “…”、git push origin hexo提交网站相关的文件；<br>执行hexo generate -d生成网站并部署到GitHub上。</p>
+<p>二.那些坑<br>1.对git不熟悉走了很多弯路，例如在master像提交到hexo分支一直不成功，用下面的命令<br>git checkout hexo #切换到hexo<br>2.</p>
+<p>三.参考链接<br><a href="http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more" target="_blank" rel="noopener">http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more</a> （很详细说了怎么优化部署）<br><a href="https://blog.csdn.net/wuseyukui/article/details/68059953" target="_blank" rel="noopener">https://blog.csdn.net/wuseyukui/article/details/68059953</a> （说了一些坑）<br><a href="http://www.ruanyifeng.com/blog/2014/06/git_remote.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2014/06/git_remote.html</a> （git一些常规操作）<br><a href="https://www.zybuluo.com/mdeditor#" target="_blank" rel="noopener">https://www.zybuluo.com/mdeditor#</a> （markdown）</p>
 
-markdown
-https://www.zybuluo.com/mdeditor#
-</code></pre>
     
 
     
