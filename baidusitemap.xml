@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://yoursite.com/2018/05/12/hexo-%E5%88%9D%E4%BD%93%E9%AA%8C/</loc>
-    <lastmod>2018-05-12T09:32:32.138Z</lastmod>
+    <lastmod>2018-05-12T12:36:53.328Z</lastmod>
     <data>
         <display>
         <title>hexo 初体验</title>
@@ -15,6 +15,9 @@
          
          
            
+             
+              <breadCrumb title="教程" url="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
+          
         </display>
     </data>
     </url>
