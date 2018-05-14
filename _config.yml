@@ -81,3 +81,11 @@ deploy:
   repo: https://github.com/smallew/smallew.github.io.git   # 设置repository对应的链接
   branch: master                                                 # 设置提交到的分支
   message: Site updated at {{ now("YYYY-MM-DD HH:mm:ss") }}      # 设置我们提交的信息
+  
+admin:
+  qiniuCfg:
+      imageslim: true  # 启动图片瘦身，仅华东区bucket可以使用
+      AccessKey: tdw_OiPHtWBp-g6eJQVQ9faRbvTsuS0yNCAK53pE
+      SecretKey: 9pPMF30lmxnQ6k9Tw4Plc4I5jiahZHT0xgQs6v4z
+      BucketName: hexo-admin
+      bucketHost: p8q0o05sj.bkt.clouddn.com
