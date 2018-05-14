@@ -17,7 +17,7 @@ categories: 教程
 然后才执行hexo g -d发布网站到master分支上。
 - 本地可以用hexo g -s 启动
 - localhost:4000/admin #使用了hexo-admin-qiniu 插件，可以通过这个链接管理文章
-- 需要上传图片需要先上传到图床 https://portal.qiniu.com/bucket/hexo-admin/resource
+- 需要上传图片需要先上传到图床 https://portal.qiniu.com/bucket/hexo-admin/resource  
 ---
 
 ### 本地资料丢失
