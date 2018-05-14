@@ -13,11 +13,11 @@ categories: 教程
 ### 日常修改
 在本地对博客进行修改（添加新博文、修改样式等等）后，通过下面的流程进行管理：
 - 在有道写markdown文件，然后copy到hexo\source\_posts 下
-- 依次执行==git add .== | ==git commit -m "…"== | ==git push origin== hexo指令将改动推送到GitHub（此时当前分支应为hexo）；
+- 依次执行 git add . | git commit -m "…" | git push origin hexo指令将改动推送到GitHub（此时当前分支应为hexo）；
 然后才执行hexo g -d发布网站到master分支上。
 - 本地可以用hexo g -s 启动
 - localhost:4000/admin #使用了hexo-admin-qiniu 插件，可以通过这个链接管理文章
-
+- 需要上传图片需要先上传到图床 https://portal.qiniu.com/bucket/hexo-admin/resource
 ---
 
 ### 本地资料丢失
@@ -25,7 +25,7 @@ categories: 教程
 
 1. 使用git clone git@github.com:smallew/smallew.github.io.git拷贝仓库（默认分支为hexo）；
 smallew.github.io文件夹下通过Git bash依次执行下列指令：npm install hexo、npm install、npm install hexo-deployer-git（记得，不需要hexo init这条指令）。
-1. 主题配置文件\_config.yml 没有提交到github,需要手动从笔记copy到==smallew.github.io\themes\material==
+1. 主题配置文件\_config.yml 没有提交到github,需要手动从笔记copy到 smallew.github.io\themes\material
 
 
 ---
