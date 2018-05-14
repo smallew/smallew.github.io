@@ -72,7 +72,7 @@
 
     
         <meta property="article:published_time" content="5月 12, 2018" />
-        <meta property="article:modified_time" content="5月 12, 2018" />
+        <meta property="article:modified_time" content="5月 14, 2018" />
     
 
     <!-- The Twitter Card protocol -->
@@ -113,7 +113,7 @@
     "headline": "hexo 初体验",
     "url": "http://yoursite.com/2018/05/12/hexo-初体验/index.html",
     "datePublished": "5月 12, 2018",
-    "dateModified": "5月 12, 2018",
+    "dateModified": "5月 14, 2018",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
@@ -327,7 +327,7 @@
 
     
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一些必要的工具"><span class="post-toc-number">1.</span> <span class="post-toc-text">一些必要的工具</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#博客管理流程"><span class="post-toc-number">2.</span> <span class="post-toc-text">博客管理流程</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#日常修改"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">日常修改</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#本地资料丢失"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">本地资料丢失</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#参考链接"><span class="post-toc-number">3.</span> <span class="post-toc-text">参考链接</span></a></li></ol>
         <!--
         <li class="mdl-menu__item">
             Some Action
@@ -463,28 +463,26 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p><strong>一些必要的工具</strong></p>
-<ul>
-<li>Git</li>
+        <h2 id="一些必要的工具"><a href="#一些必要的工具" class="headerlink" title="一些必要的工具"></a>一些必要的工具</h2><ul>
+<li>Git Bash</li>
 <li>node.js</li>
 <li>使用的主题：<a href="https://github.com/viosey/hexo-theme-material" target="_blank" rel="noopener">https://github.com/viosey/hexo-theme-material</a></li>
 </ul>
-<p><strong>一.大概流程</strong></p>
+<h2 id="博客管理流程"><a href="#博客管理流程" class="headerlink" title="博客管理流程"></a>博客管理流程</h2><h3 id="日常修改"><a href="#日常修改" class="headerlink" title="日常修改"></a>日常修改</h3><p>在本地对博客进行修改（添加新博文、修改样式等等）后，通过下面的流程进行管理：</p>
+<ul>
+<li>在有道写markdown文件，然后copy到hexo\source_posts 下</li>
+<li>依次执行==git add .== | ==git commit -m “…”== | ==git push origin== hexo指令将改动推送到GitHub（此时当前分支应为hexo）；<br>然后才执行hexo g -d发布网站到master分支上。</li>
+<li>本地可以用hexo g -s 启动</li>
+<li>localhost:4000/admin #使用了hexo-admin-qiniu 插件，可以通过这个链接管理文章</li>
+</ul>
+<hr>
+<h3 id="本地资料丢失"><a href="#本地资料丢失" class="headerlink" title="本地资料丢失"></a>本地资料丢失</h3><p>当重装电脑之后，或者想在其他电脑上修改博客，可以使用下列步骤：</p>
 <ol>
-<li>创建仓库，smallew.github.io；</li>
-<li>创建两个分支：master 与 hexo；</li>
-<li>设置hexo为默认分支（因为我们只需要手动管理这个分支上的Hexo网站文件）；</li>
-<li>使用git clone <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:smallew/smallew.github.io.git拷贝仓库；</li>
-<li>在本地smallew.github.io文件夹下通过Git bash依次执行npm install hexo、hexo init、npm<br>install 和 npm install hexo-deployer-git（此时当前分支应显示为hexo）;</li>
-<li>修改_config.yml中的deploy参数，分支应为master；</li>
-<li>依次执行git add .、git commit -m “…”、git push origin hexo提交网站相关的文件；</li>
-<li>执行hexo generate -d生成网站并部署到GitHub上。</li>
+<li>使用git clone <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:smallew/smallew.github.io.git拷贝仓库（默认分支为hexo）；<br>smallew.github.io文件夹下通过Git bash依次执行下列指令：npm install hexo、npm install、npm install hexo-deployer-git（记得，不需要hexo init这条指令）。</li>
+<li>主题配置文件_config.yml 没有提交到github,需要手动从笔记copy到==smallew.github.io\themes\material==</li>
 </ol>
-<p><strong>二.那些坑</strong></p>
-<ol>
-<li>对git不熟悉走了很多弯路，例如在master像提交到hexo分支一直不成功，用下面的命令 git checkout hexo #切换到hexo</li>
-</ol>
-<p><strong>三.参考链接</strong><br><a href="http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more" target="_blank" rel="noopener">http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more</a> （很详细说了怎么优化部署）<br><a href="https://blog.csdn.net/wuseyukui/article/details/68059953" target="_blank" rel="noopener">https://blog.csdn.net/wuseyukui/article/details/68059953</a> （说了一些坑）<br><a href="http://www.ruanyifeng.com/blog/2014/06/git_remote.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2014/06/git_remote.html</a> （git一些常规操作）<br><a href="https://www.zybuluo.com/mdeditor#" target="_blank" rel="noopener">https://www.zybuluo.com/mdeditor#</a> （markdown）</p>
+<hr>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more" target="_blank" rel="noopener">http://crazymilk.github.io/2015/12/28/GitHub-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/#more</a> （很详细说了安装过程，初次安装可以参考）<br><a href="https://blog.csdn.net/wuseyukui/article/details/68059953" target="_blank" rel="noopener">https://blog.csdn.net/wuseyukui/article/details/68059953</a> （说了一些坑，七牛图床的使用）<br><a href="http://www.ruanyifeng.com/blog/2014/06/git_remote.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2014/06/git_remote.html</a> （git一些常规操作）</p>
 
     
 
@@ -509,14 +507,6 @@
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
-    
-        <a href="/2018/05/09/hello-world/" id="post_nav-older" class="next-content">
-            旧篇
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_forward</i>
-            </button>
-        </a>
     
 </nav>
 
@@ -602,7 +592,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">2</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/05/">五月 2018<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
@@ -658,7 +648,7 @@
         <li>
             <a href="/archives">
                 文章总数
-                <span class="sidebar-badge">2</span>
+                <span class="sidebar-badge">1</span>
             </a>
         </li>
         
